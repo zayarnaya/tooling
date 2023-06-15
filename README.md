@@ -62,6 +62,7 @@
 ----
 
 **Профиль загрузки страницы** лежит [тут](https://github.com/zayarnaya/tooling/blob/main/filesFast/Trace-20230613T224355.json.zip "Профиль загрузки страницы Perfomance") (.zip)
+**Профиль загрузки страницы** лежит [тут](https://github.com/zayarnaya/tooling/blob/main/filesFast/Trace-20230613T224355.json.zip "Профиль загрузки страницы Perfomance") (.zip)
 
 **First Paint / FP**: 548.79ms
 
@@ -85,8 +86,13 @@
 
 ![WebVitals](https://github.com/zayarnaya/tooling/blob/main/filesFast/Vitals.png)
 
+![WebVitals](https://github.com/zayarnaya/tooling/blob/main/filesFast/Vitals.png)
+
 Вкладка Coverage
 ----
+**Профиль загрузки страницы** лежит [тут](https://github.com/zayarnaya/tooling/blob/main/filesFast/Coverage-20230613T224618.json "Профиль загрузуи страницы - Coverage")
+
+**Скриншот** лежит [здесь](https://github.com/zayarnaya/tooling/blob/main/filesFast/CoverageByUsage.png "Скриншот Coverage") (длинннннный, как орбит полярная ночь), [тут только css](https://github.com/zayarnaya/tooling/blob/main/filesFast/CoverageByType_CSS.png "Coverage для CSS"), [тут только для js](https://github.com/zayarnaya/tooling/blob/main/filesFast/CoverageByType_JS.png "Coverage для js")
 **Профиль загрузки страницы** лежит [тут](https://github.com/zayarnaya/tooling/blob/main/filesFast/Coverage-20230613T224618.json "Профиль загрузуи страницы - Coverage")
 
 **Скриншот** лежит [здесь](https://github.com/zayarnaya/tooling/blob/main/filesFast/CoverageByUsage.png "Скриншот Coverage") (длинннннный, как орбит полярная ночь), [тут только css](https://github.com/zayarnaya/tooling/blob/main/filesFast/CoverageByType_CSS.png "Coverage для CSS"), [тут только для js](https://github.com/zayarnaya/tooling/blob/main/filesFast/CoverageByType_JS.png "Coverage для js")
