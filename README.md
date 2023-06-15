@@ -8,60 +8,60 @@
 Вкладка Network
 ----
 
-**Профиль загрузки ресурсов в HAR** лежит тут
-
-**Скриншот** лежит здесь (длинннннный, как орбит полярная ночь)
+**Профиль загрузки ресурсов в HAR** лежит [тут](https://github.com/zayarnaya/tooling/blob/main/filesFast/www.gd.ru2.har "Профиль загрузки .har")
 
 **Неоптимальные места:**
 
-- лишний размер: картинки больше, чем место под них, но незначительно. Примеры:
+- **лишний размер**: картинки больше, чем место под них, но незначительно. Примеры:
 
-  **ширина 395 нужно/460 грузится**
+  *ширина 395 нужно/460 грузится*
 
   `<img loading="lazy" src="/images/branding/10/imageTop_1628667062.7856.jpg" data-url="/images/branding/10/imageTop_1628667062.7856.jpg" alt="-">`
 
   `<img loading="lazy" src="/images/branding/10/imageRight_1628667062.7146.jpg" data-url="/images/branding/10/imageRight_1628667062.7146.jpg" alt="-">`
 
-  **ширина 1100 нужно /1280 грузится**
+  *ширина 1100 нужно /1280 грузится*
 
   `<img loading="lazy" src="/images/branding/10/imageTop_1628667062.7856.jpg" data-url="/images/branding/10/imageTop_1628667062.7856.jpg" alt="-">`
 
-  **ширина 90 нужно /140 грузится** – пустая картинка, в загрузке весит 500 kb, вероятно, ее можно было бы заменить на div  с фиксированной шириной и высотой
+  *ширина 90 нужно /140 грузится* – пустая картинка, в загрузке весит 500 kb, вероятно, ее можно было бы заменить на div  с фиксированной шириной и высотой
 
   `<img loading="lazy" class="moreInteresting__image" src="/assets/f8e4500d/assets/frontend/images/empty140x95.gif" alt="Генеральный Директор" data-url="https://www.gd.ru/images/covers/06-23_gd.png" title="Генеральный Директор">`
 
-- дубли
+- **дубли**
 
-  <скрин>
+  ![дубли](https://github.com/zayarnaya/tooling/blob/main/filesFast/moreDoubles.png)
 
-- некоторые картинки выдают редирект 302 temporarily moved. Во-первых, это вынуждает сайт делать два запроса вместо одного, во-вторых, код 302 удерживает поисковые роботы от обновления ссылок (что плохо для SEO)
+- некоторые картинки выдают **редирект 302** temporarily moved. Во-первых, это вынуждает сайт делать два запроса вместо одного, во-вторых, код 302 удерживает поисковые роботы от обновления ссылок (что плохо для SEO)
 
-  <тут должен быть скрин>
+  ![302](https://github.com/zayarnaya/tooling/blob/main/filesFast/problems_302.png)
 
-- несжатые файлы со своего сервера
+- **несжатые файлы** со своего сервера
 
-  <скрин>
-- в части запросов используется протокол https/1.1, в котором меньше потоков, чем в 2 или 3
-
-  <скрин>
-- где-то зарыт второй счетчик Яндекс.Метрики (где именно - не нашла), соответственно запросы ходят в двойном объеме
-
-  <скрин метрики>
-
-- файлы bootstrap, во-первых, загружаются из cdn (возможно, имеет смысл держать их на собственном сервере), во-вторых, загружается и бандл, и отдельный js, что излишне
+  ![unzipped](https://github.com/zayarnaya/tooling/blob/main/filesFast/noZipping.png)
   
-  <скрин >
+- в части запросов используется **протокол https/1.1**, в котором меньше потоков, чем в 2 или 3
 
-- медленно загружающиеся ресурсы
+  ![http/1.1](https://github.com/zayarnaya/tooling/blob/main/filesFast/http1-1.png)
+  
+- где-то зарыт **второй счетчик Яндекс.Метрики** (где именно - не нашла), соответственно запросы ходят в двойном объеме
 
-  <скрин>
+  ![metrics](https://github.com/zayarnaya/tooling/blob/main/filesFast/twoTags.png)
+
+- файлы bootstrap, во-первых, **загружаются из cdn** (возможно, имеет смысл держать их на собственном сервере), во-вторых, загружается и бандл, и отдельный js, что излишне
+  
+  ![bootstrap](https://github.com/zayarnaya/tooling/blob/main/filesFast/bootstrap.png)
+
+- **медленно загружающиеся ресурсы**
+
+  ![sloooooow](https://github.com/zayarnaya/tooling/blob/main/filesFast/Network%20long%20requests.png)
 
 Ресурсов, блокирующих загрузку, не нашла, однако медленные ресурсы со скрина выше откладывают событие полной загрузки страницы, возможно, имеет смысл их грузить через async/defer
 
 Вкладка Perfomance
 ----
 
-**Профиль загрузки страницы** лежит тут (.zip)
+**Профиль загрузки страницы** лежит [тут](https://github.com/zayarnaya/tooling/blob/main/filesFast/Trace-20230613T224355.json.zip "Профиль загрузки страницы Perfomance") (.zip)
 
 **First Paint / FP**: 548.79ms
 
@@ -82,19 +82,22 @@
 **Rendering**: 734ms
 
 **Painting**: 221ms
-<скрин>
+
+![WebVitals](https://github.com/zayarnaya/tooling/blob/main/filesFast/Vitals.png)
 
 Вкладка Coverage
 ----
-**Профиль загрузки страницы** лежит тут
+**Профиль загрузки страницы** лежит [тут](https://github.com/zayarnaya/tooling/blob/main/filesFast/Coverage-20230613T224618.json "Профиль загрузуи страницы - Coverage")
 
-<скрин вкладки>
+**Скриншот** лежит [здесь](https://github.com/zayarnaya/tooling/blob/main/filesFast/CoverageByUsage.png "Скриншот Coverage") (длинннннный, как орбит полярная ночь), [тут только css](https://github.com/zayarnaya/tooling/blob/main/filesFast/CoverageByType_CSS.png "Coverage для CSS"), [тут только для js](https://github.com/zayarnaya/tooling/blob/main/filesFast/CoverageByType_JS.png "Coverage для js")
 
-**Unused CSS**: ~ 444 884 bytes
+**Unused CSS**: ~ 444 884 bytes / 434.46kb
 
-**Unused CSS + JS**: 109157 bytes
+**Unused CSS + JS**: 109 157 bytes / 106.6kb
 
-**Unused JS**: ~ 2200477 bytes
+**Unused JS**: ~ 2 200 477 bytes / 2 148.9kb
+
+(считалось из джейсона, поэтому не очень уверена, что правильно)
 
 Часть файлов и вовсе не используется:
 `https://www.gd.ru/assets/f8e4500d/widgets/views/ContentRatingWidget/assets/css/rating.css?cache=5a6fa72bdfc8007242bf089feb2ff92203bc8762`
@@ -112,19 +115,23 @@
 Задание 2*
 ---
 
-Все, что относится к **вкладкам Network и Coverage** более быстрой загрузки, применимо и для медленной, что, возможно, говорит о том, что страница не оптимизирована под плохой канал.
+Все, что относится к **вкладкам Network и Coverage** более быстрой загрузки, применимо и для медленной, что, возможно, говорит о том, что страница не оптимизирована под плохой канал. Грузится чудовищно долго.
 
-**Профиль загрузки страницы в HAR** лежит здесь
+**Профиль загрузки страницы в HAR** лежит [здесь](https://github.com/zayarnaya/tooling/blob/main/filesSlow/www.gd.ru.har.zip "Профиль медленной загрузки страницы .har") (.zip)
 
-**Профиль Coverage** лежит тут
+**Профиль Coverage** лежит [тут](https://github.com/zayarnaya/tooling/blob/main/filesSlow/Coverage-20230614T211432.json "Профиль Coverage медленной загрузки")
 
-<скрин нетворк>
+**Скриншот вкладки Network**
 
-<скрин покрытие>
+![Network](https://github.com/zayarnaya/tooling/blob/main/filesSlow/network.png "Network slow")
+
+**Скриншот вкладки Coverage**
+
+![Coverage](https://github.com/zayarnaya/tooling/blob/main/filesSlow/coverage.png "Coverage slow")
 
 Вкладка Perfomance
 --
-**Профиль загрузки страницы** лежит тут (.zip)
+**Профиль загрузки страницы** лежит [тут](https://github.com/zayarnaya/tooling/blob/main/filesSlow/Trace-20230615T124208.json.zip "Профиль Perfomance медленной загрузки") (.zip)
 
 **First Paint / FP**: 9231ms
 
@@ -146,7 +153,7 @@
 
 **Painting**: 4867ms
 
-<скрин>
+![WebVitals](https://github.com/zayarnaya/tooling/blob/main/filesSlow/vitals.png "WebVitals slow")
 
 
 
