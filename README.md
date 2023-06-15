@@ -30,31 +30,31 @@
 
 - **дубли**
 
-  ![дубли](https://github.com/zayarnaya/tooling/blob/main/filesFast/moreDoubles.png)
+  ![дубли](https://github.com/zayarnaya/tooling/blob/main/filesFast/moreDoubles.png "это дубли у нас простые")
 
 - некоторые картинки выдают **редирект 302** temporarily moved. Во-первых, это вынуждает сайт делать два запроса вместо одного, во-вторых, код 302 удерживает поисковые роботы от обновления ссылок (что плохо для SEO)
 
-  ![302](https://github.com/zayarnaya/tooling/blob/main/filesFast/problems_302.png)
+  ![302](https://github.com/zayarnaya/tooling/blob/main/filesFast/problems_302.png "302")
 
 - **несжатые файлы** со своего сервера
 
-  ![unzipped](https://github.com/zayarnaya/tooling/blob/main/filesFast/noZipping.png)
+  ![unzipped](https://github.com/zayarnaya/tooling/blob/main/filesFast/noZipping.png "несжатые файлы")
   
 - в части запросов используется **протокол https/1.1**, в котором меньше потоков, чем в 2 или 3
 
-  ![http/1.1](https://github.com/zayarnaya/tooling/blob/main/filesFast/http1-1.png)
+  ![http/1.1](https://github.com/zayarnaya/tooling/blob/main/filesFast/http1-1.png "протокол https/1.1")
   
 - где-то зарыт **второй счетчик Яндекс.Метрики** (где именно - не нашла), соответственно запросы ходят в двойном объеме
 
-  ![metrics](https://github.com/zayarnaya/tooling/blob/main/filesFast/twoTags.png)
+  ![metrics](https://github.com/zayarnaya/tooling/blob/main/filesFast/twoTags.png "Два счетчика, шеф!")
 
 - файлы bootstrap, во-первых, **загружаются из cdn** (возможно, имеет смысл держать их на собственном сервере), во-вторых, загружается и бандл, и отдельный js, что излишне
   
-  ![bootstrap](https://github.com/zayarnaya/tooling/blob/main/filesFast/bootstrap.png)
+  ![bootstrap](https://github.com/zayarnaya/tooling/blob/main/filesFast/bootstrap.png "bootstrap")
 
 - **медленно загружающиеся ресурсы**
 
-  ![sloooooow](https://github.com/zayarnaya/tooling/blob/main/filesFast/Network%20long%20requests.png)
+  ![sloooooow](https://github.com/zayarnaya/tooling/blob/main/filesFast/Network%20long%20requests.png "меееедленные запросы")
 
 Ресурсов, блокирующих загрузку, не нашла, однако медленные ресурсы со скрина выше откладывают событие полной загрузки страницы, возможно, имеет смысл их грузить через async/defer
 
@@ -84,9 +84,7 @@
 
 **Painting**: 221ms
 
-![WebVitals](https://github.com/zayarnaya/tooling/blob/main/filesFast/Vitals.png)
-
-![WebVitals](https://github.com/zayarnaya/tooling/blob/main/filesFast/Vitals.png)
+![WebVitals](https://github.com/zayarnaya/tooling/blob/main/filesFast/Vitals.png "Vitals")
 
 Вкладка Coverage
 ----
