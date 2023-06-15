@@ -29,10 +29,37 @@
   `<img loading="lazy" class="moreInteresting__image" src="/assets/f8e4500d/assets/frontend/images/empty140x95.gif" alt="Генеральный Директор" data-url="https://www.gd.ru/images/covers/06-23_gd.png" title="Генеральный Директор">`
 
 - **дубли**
+  - `https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js`
+  - `https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css`
+  - `https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js`
+  - `https://top-fwz1.mail.ru/js/code.js`
+  - `fontawesome-webfont.woff2?v=4.7.0` загружается со своего сервера и с чужого
+  - `https://code.jquery.com/jquery-3.5.1.js`
+  - `https://vk.com/js/api/openapi.js`
+  - `https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js`
+  - `https://www.gd.ru/images/paywall/system_gd-logo.png`
+  - `https://mp-events.mi.action-media.ru/user-recognition`
+  - `https://www.1cont.ru/` с двух мест gd-cont-small-2.svg и lupa.svg
 
   ![дубли](https://github.com/zayarnaya/tooling/blob/main/filesFast/moreDoubles.png "это дубли у нас простые")
 
-- некоторые картинки выдают **редирект 302** temporarily moved. Во-первых, это вынуждает сайт делать два запроса вместо одного, во-вторых, код 302 удерживает поисковые роботы от обновления ссылок (что плохо для SEO)
+- некоторые запросы выдают **редирект 302** temporarily moved. Во-первых, это вынуждает сайт делать два запроса вместо одного, во-вторых, код 302 удерживает поисковые роботы от обновления ссылок (что плохо для SEO):
+  - `https://vip.1gd.ru/system/content/image/250/1/-38610725/`  
+  - `https://vip.1gd.ru/system/content/image/250/1/-38610723/`
+  - `https://vip.1gd.ru/system/content/image/250/1/-38610726/`
+  - `https://vip.1gd.ru/system/content/image/250/1/-38617734/`
+  - `https://vip.1gd.ru/system/content/image/250/1/-38617735/`
+  - `https://vip.1gd.ru/system/content/image/250/1/-38611674/`
+  - `https://vip.1gd.ru/system/content/image/250/1/-38611675/`
+  - `https://vip.1gd.ru/system/content/image/250/1/-38611676/`
+  - `https://vip.1gd.ru/system/content/image/250/1/-38617429/`
+  - `https://info.1cont.ru/test-widget/img/gd-cont-small-2.svg`
+  - `https://info.1cont.ru/test-widget/img/lupa.svg`
+  - `https://www.tns-counter.ru/V13a****ar_ru/ru/CP1251/tmsec=34250_754807-3612803/`
+  - некоторые запросы `https://top-fwz1.mail.ru/counter`
+  - некоторые запросы `https://counter.yadro.ru/hit`
+  - некоторые запросы `https://mc.yandex.ru/watch`
+  - `https://ssl.google-analytics.com/r/__utm.gif`
 
   ![302](https://github.com/zayarnaya/tooling/blob/main/filesFast/problems_302.png "302")
 
