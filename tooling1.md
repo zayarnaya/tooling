@@ -155,6 +155,10 @@
 
 **Элемент, на котором происходит LCP**: `<img loading="lazy" src="/images/branding/10/imageTop_1628667062.7856.jpg" data-url="/images/branding/10/imageTop_1628667062.7856.jpg" alt="-">`
 
+*Тут можно отдельно отметить, что картинка представляет из себя прямоугольник, залитый близким к черному цветом. Возможно, имеет смысл сделать его `div`'ом с заливкой*
+
+![Black](https://github.com/zayarnaya/tooling/blob/main/filesFast/black.jpg "Та самая картинка. Почти Малевич.")
+
 **Loading**: 43ms
 
 **Scripting**: 2168ms
