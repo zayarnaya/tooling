@@ -122,9 +122,7 @@
 
 Объем неиспользованного **CSS + JS**: 109 157 bytes / 106.6kb
 
-Объем неиспользованного **JS**: ~ 2 200 477 bytes / 2 148.9kb
-
-(считалось из джейсона, поэтому не очень уверена, что правильно)
+Объем неиспользованного **JS**: ~ 3 000kb
 
 Часть файлов и вовсе не используется:
 `https://www.gd.ru/assets/f8e4500d/widgets/views/ContentRatingWidget/assets/css/rating.css?cache=5a6fa72bdfc8007242bf089feb2ff92203bc8762`
