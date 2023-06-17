@@ -127,8 +127,6 @@
 Часть файлов и вовсе не используется:
 `https://www.gd.ru/assets/f8e4500d/widgets/views/ContentRatingWidget/assets/css/rating.css?cache=5a6fa72bdfc8007242bf089feb2ff92203bc8762`
 
-`https://www.gd.ru/assets/f8e4500d/modules/id2Auth/assets/css/social-buttons.css?cache=5a6fa72bdfc8007242bf089feb2ff92203bc8762`
-
 В целом 
 ---
 - Страница не оптимизирована под мою ширину экрана, часть контента “вылезает” за края экрана
